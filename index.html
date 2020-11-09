@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var width;
+        var height;
+        do {
+             width = parseInt(window.prompt("Xin Nhập vào chiều dài", ""), 10);
+             height = parseInt(window.prompt("Xin Nhập vào chiều cao", ""), 10);
+        }while((isNaN(width) || isNaN(height)) || (width<1 || height<1));
+        let area = width * height;
+        document.write("The area is: " + area);
+    </script>
+</body>
+
+</html>
